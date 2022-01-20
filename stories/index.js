@@ -159,12 +159,38 @@ storiesOf("Appointment", module)
     />
   ))
   .add("Status", () => <Status message="Deleting" />)
-  .add("Error", () => <Error message="Could not delete appointment" onClose={action("onClose")} />)
-  .add("Edit", () => <Form student="Mikko De Los Reyes" interviewer={4} interviewers={[interviewers]} onSave={action("onSave")} onCancel={action("onCancel")} />)
-  .add("Create", () => <Form interviewers={interviewers} onSave={action("onSave")} onCancel={action("onCancel")} />)
+  .add("Error", () => (
+    <Error message="Could not delete appointment" onClose={action("onClose")} />
+  ))
+  .add("Edit", () => (
+    <Form
+      student="Mikko De Los Reyes"
+      interviewer={4}
+      interviewers={interviewers}
+      onSave={action("onSave")}
+      onCancel={action("onCancel")}
+    />
+  ))
+  .add("Create", () => (
+    <Form
+      interviewers={interviewers}
+      onSave={action("onSave")}
+      onCancel={action("onCancel")}
+    />
+  ))
   .add("Appointment Empty", () => (
     <Fragment>
       <Appointment id={1} time="4pm" />
       <Appointment time="5pm" />
     </Fragment>
   ))
+  .add("Appointment Booked", () => (
+    <Fragment>
+      <Appointment
+        id={1}
+        time="4pm"
+        interview={{ student: "Lydia Miller-Jones", interviewer }}
+      />
+      <Appointment time="5pm" />
+    </Fragment>
+  ));
