@@ -14,7 +14,6 @@ export default function Application(props) {
   });
 
   function bookInterview(id, interview) {
-    console.log(id, interview);
     const appointment = {
       ...state.appointments[id],
       interview: {...interview}
@@ -41,7 +40,7 @@ export default function Application(props) {
       ...state.appointments,
       [id]: appointment
     }
-    return axios.delete(`/api/appointments/&{id}`)
+    return axios.delete(`/api/appointments/${id}`)
     .then(res => {
       setState({...state, appointments})
     })
