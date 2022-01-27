@@ -1,4 +1,15 @@
 # Interview Scheduler
+Interview Scheduler is a Single Page React App. This app allows users to book, edit, and cancel interviews with their chosen Interviewer. Users are able to see the remaining spots for a selected day.
+
+## Checkout the GIF below for a quick demo:
+
+!["Demo Gif of Schduler"] https://github.com/ofthekings12/scheduler/blob/master/docs/schedulergif.gif?raw=true
+
+## Testing
+This App uses
+ - Jest
+ - Cypress
+ - StoryBook
 
 ## Setup
 
