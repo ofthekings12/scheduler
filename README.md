@@ -3,7 +3,8 @@ Interview Scheduler is a Single Page React App. This app allows users to book, e
 
 ## Checkout the GIF below for a quick demo:
 
-!["Demo Gif of Schduler"] (https://github.com/ofthekings12/scheduler/blob/master/docs/schedulergif.gif?raw=true)
+!["Demo Gif of Scheduler"](https://github.com/ofthekings12/scheduler/blob/master/docs/schedulergif.gif?raw=true)
+
 
 ## Testing
 This App uses
