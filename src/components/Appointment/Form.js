@@ -6,7 +6,7 @@ import "components/Appointment/styles.scss";
 export default function Form(props) {
 
   const [student, setStudent] = useState(props.student || "");
-  const [interviewer, setInterviewer] = useState(props.interviewer || null);
+  const [interviewer, setInterviewer] = useState(props.value || null);
   const [error, setError] = useState("");
 
   const reset = () => {
